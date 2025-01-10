@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meal Search</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+    <header>
+        <h1>Meal Search</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for a meal...">
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+
+    <main id="results-container"></main>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about food and love to share delicious meal ideas with everyone. Our goal is to help you
+            discover new recipes and enjoy cooking!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to reach out to us at <a
+                href="mailto:info@mealsearch.com">info@mealsearch.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Meal Search. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
