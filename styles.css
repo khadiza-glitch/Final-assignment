@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav {
+    margin: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .search-container {
+    margin-top: 10px;
+  }
+  
+  #search-input {
+    padding: 10px;
+    width: 200px;
+  }
+  
+  #search-button {
+    padding: 10px;
+  }
+  
+  main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .results-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .meal-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px; /* Increased padding for better spacing */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    background-color: #f9f9f9; /* Light background for contrast */
+  }
+  
+  .meal-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .meal-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Space below the image */
+  }
+  
+  .meal-card h2 {
+    margin: 10px 0; /* Margin for the meal name */
+  }
+  
+  .meal-card p {
+    margin: 5px 0; /* Margin for paragraphs */
+  }
+  
+  section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .show-all-button {
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .show-all-button:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 1200px) {
+    .results-grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .results-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    nav ul li {
+      display: block;
+      margin: 5px 0;
+    }
+  
+    #search-input {
+      width: 100%;
+    }
+  }
+  
