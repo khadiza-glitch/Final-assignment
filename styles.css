@@ -138,4 +138,34 @@ body {
       width: 100%;
     }
   }
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* Limit the width of the form */
+    margin: 20px auto; /* Center the form */
+  }
   
+  label {
+    margin: 10px 0 5px; /* Space above and below labels */
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Space below inputs */
+  }
+  
+  button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
